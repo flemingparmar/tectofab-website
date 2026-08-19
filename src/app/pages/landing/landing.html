@@ -1,0 +1,108 @@
+<!-- <nav class="navbar">
+  <div class="logo">
+    <img src="images/Logo.jpeg" alt="Tecto Fab" />
+    <span>TectoFab Engineering</span>
+  </div>
+
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav> -->
+
+<nav class="navbar" [class.shrink]="isScrolled">
+  <div class="logo">
+    <img src="images/Logo.jpeg" alt="Tecto Fab" />
+    <span>TectoFab Engineering</span>
+  </div>
+
+  <div class="menu-toggle" (click)="menuOpen = !menuOpen">☰</div>
+
+  <ul [class.open]="menuOpen">
+  <li><a (click)="scrollTo('about')">About</a></li>
+  <li><a (click)="scrollTo('services')">Services</a></li>
+  <li><a (click)="scrollTo('why')">Why Us</a></li>
+  <li><a (click)="scrollTo('contact')">Contact</a></li>
+</ul>
+</nav>
+
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Fabrication & Engineering Solutions</h1>
+    <p>Precision • Strength • Reliability</p>
+    <button>Get a Quote</button>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <h2>About Us</h2>
+  <p>
+    TectoFab Engineering specializes in fabrication,
+    structural steel fabrication, stainless steel works, and industrial engineering solutions.
+    We deliver precision-engineered products with a strong focus on quality, safety and timely execution.
+  </p>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services">
+  <h2>Our Services</h2>
+
+  <div class="service-grid">
+    <div class="card">
+      <h3>Structural Fabrication</h3>
+      <p>Heavy & light structural steel fabrication with precision.</p>
+    </div>
+
+    <div class="card">
+      <h3>Industrial Engineering</h3>
+      <p>Design, development & execution of engineering projects.</p>
+    </div>
+
+    <div class="card">
+      <h3>Stainless Steel Works</h3>
+      <p>SS tanks, pipelines, railings & custom SS jobs.</p>
+    </div>
+
+    <div class="card">
+      <h3>MS Works</h3>
+      <p>Precision MS fabrication solutions for industrial and commercial applications.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section id="why" class="why">
+  <h2>Why Choose Us</h2>
+  <ul>
+    <li>✔ Experienced Engineers</li>
+    <li>✔ Quality Materials</li>
+    <li>✔ Timely Delivery</li>
+    <li>✔ Competitive Pricing</li>
+  </ul>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+
+  <div class="contact-item">
+     <fa-icon [icon]="faEnvelope"></fa-icon>
+    <p>contact@tectofabengineering.co.in</p>
+  </div>
+
+  <div class="contact-item">
+    <fa-icon [icon]="faPhone"></fa-icon>
+    <p>+91 9924112512</p>
+  </div>
+</section>
+
+
+<footer>
+  <p>Copyright © 2025 TectoFab Engineering - All Rights Reserved.</p>
+</footer>

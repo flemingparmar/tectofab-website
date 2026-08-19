@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --brand-dark: #2B0505;
+  --brand-accent: #FF9F1C;
+  --brand-accent-dark: #C45508;
+  --industrial-dark: #1E1E1E;
+  --steel-gray: #8A8A8A;
+  --light-bg: #F4F4F4;
+  --white: #FFFFFF;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}

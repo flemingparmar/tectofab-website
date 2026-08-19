@@ -37,7 +37,7 @@ jobs:
       - name: Upload Angular build
         uses: actions/upload-pages-artifact@v4
         with:
-          path: ./dist
+          path: ./dist/tecto-fab-engineering/browser
 
   deploy:
     runs-on: ubuntu-latest
